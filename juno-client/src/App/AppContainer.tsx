@@ -8,6 +8,7 @@ function AppContainer() {
 
     return (            
         <ThemeProvider theme={PersonalTheme}>
+            <meta name="viewport" content="width=device-width" />
                 <Box className="AppContainer">
                     <Helmet>
                         <title>Joris Kuiper</title>

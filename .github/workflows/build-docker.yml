@@ -10,6 +10,6 @@ jobs:
       run: | # log into docker hub account
         docker login -u ${{secrets.DOCKERHUB_USERNAME}} -p ${{secrets.DOCKERHUB_TOKEN}}
     - name: Build the Docker image # push The image to the docker hub
-      run: docker build . --file dockerfile --tag latest
+      run: docker build . --file ../.dockerfile --tag latest
     - name: Docker Push
       run: docker push latest

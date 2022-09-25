@@ -1,17 +1,12 @@
 import { Box, Typography } from '@mui/material';
 import Background from '../Components/Background';
-import Grid from '@mui/material/Grid';
 import SocialButtons from '../Components/SocialButtons';
 
 import "./LandingPage.scss"
 
 function LandingPage() {
-
-
-
     return (
         <Box className='LandingPage'>
-            
             <Box className='content'>
                     <Box className='TitleAndLinks'>
                         <Typography

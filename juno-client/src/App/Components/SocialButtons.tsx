@@ -1,14 +1,16 @@
 import { Box, IconButton } from '@mui/material';
-import {FaInstagram, FaGithub, FaLinkedin} from "react-icons/fa"
+import {FaInstagram, FaGithub, FaLinkedin, FaEnvelope} from "react-icons/fa"
 
 function SocialButtons() {
 
     const socialIcons = [<FaInstagram/>,
     <FaGithub/>,
-    <FaLinkedin/>]
+    <FaLinkedin/>,
+    <FaEnvelope/>]
     const socialLinks = ["https://www.instagram.com/joriskuiper",
      "https://www.github.com/kasteelharry",
-     "https://www.linkedin.com/in/joris-kuiper-b070b6164/"]
+     "https://www.linkedin.com/in/joris-kuiper-b070b6164/",
+    "mailto:joriskuiper2@gmail.com"]
 
 
 

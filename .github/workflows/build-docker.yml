@@ -12,6 +12,6 @@ jobs:
     - name: show files
       run: ls -a
     - name: Build the Docker image # push The image to the docker hub
-      run: docker build . --file .dockerfile --tag latest
+      run: docker build . --file .dockerfile --tag juno-latest
     - name: Docker Push
-      run: docker push latest
+      run: docker push ${{secrets.DOCKERHUB_USERNAME}}/${{secrets.DOCKER_REPO}}:juno-latest

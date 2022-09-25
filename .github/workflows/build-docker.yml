@@ -1,5 +1,9 @@
 name: Build and publish the Docker image.
-on: [push] # When pushing to any branch then run this action
+on: 
+  push:
+    branches:
+      - dev
+      - master
 
 jobs:
   build-docker-and-deploy:  # job name

@@ -11,6 +11,8 @@ jobs:
     - name: docker login
       run: | # log into docker hub account
         docker login -u ${{secrets.DOCKERHUB_USERNAME}} -p ${{secrets.DOCKERHUB_TOKEN}}
+    - name: show files
+      run: ls -a
     - name: Build the Docker image # push The image to the docker hub
       run: docker build . --file ../.dockerfile --tag latest
     - name: Docker Push

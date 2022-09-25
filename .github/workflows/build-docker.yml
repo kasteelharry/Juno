@@ -1,12 +1,8 @@
 name: Build and publish the Docker image.
 on: [push] # When pushing to any branch then run this action
-# Env variable
-env:
-  DOCKER_USERNAME: ${{secrets.DOCKER_USERNAME}}
-  DOCKER_PASSWORD: ${{secrets.DOCKER.TOKEN}}
-  REPO_NAME: ${{secrets.REPO_NAME}}
+
 jobs:
-  name: Docker build and deploy  # job name
+  build-docker-and-deploy:  # job name
     runs-on: ubuntu-latest  # runner name : (ubuntu latest version) 
     steps:
     - uses: actions/checkout@v2 # first action : checkout source code

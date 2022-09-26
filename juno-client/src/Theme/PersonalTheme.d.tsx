@@ -27,6 +27,21 @@ export const PersonalTheme = createTheme({
             '@media (min-width:2000px)': {
                 fontSize: '4.5rem',
             },
+        },
+        h4: {
+            fontSize: '2rem',
+            '@media (min-width:600px)': {
+                fontSize: '2.25rem',
+            },
+            '@media (min-width:900px)': {
+                fontSize: '2.5rem',
+            },
+            '@media (min-width:1000px)': {
+                fontSize: '2.25rem',
+            },
+            '@media (min-width:2000px)': {
+                fontSize: '3rem',
+            },
         }
     }
 });

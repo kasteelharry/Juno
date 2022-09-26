@@ -4,7 +4,7 @@ export const PersonalTheme = createTheme({
     palette: {
         primary: {
             light: "#7986cb",
-            main: "#005775",
+            main: "#2596be",
             dark: "#303f9f",
             contrastText: "#fff"
         },

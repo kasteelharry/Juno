@@ -1,5 +1,5 @@
 import { Box, Typography } from '@mui/material';
-import Background from '../Components/Background';
+
 import SocialButtons from '../Components/SocialButtons';
 
 import "./LandingPage.scss"
@@ -30,9 +30,7 @@ function LandingPage() {
                     </Box>
 
             </Box>
-            <Box className='background'>
-                <Background />
-            </Box>
+            
         </Box>
     );
 }

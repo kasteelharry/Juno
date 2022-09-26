@@ -14,7 +14,7 @@ function MenuBar() {
     const navigate = useNavigate()
 
     return (
-        <AppBar position="static">
+        <AppBar position="static" sx={{bgcolor:'primary.main'}}>
             <Container maxWidth={false}>
                 <Toolbar disableGutters>
                 <img className='title-picture' src={require('../../images/logo.png')} alt='' />

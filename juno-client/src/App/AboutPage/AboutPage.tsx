@@ -31,7 +31,7 @@ function AboutPage() {
                     variant="h6"
                     component="div"
                     sx={{
-                        ml: 3, mr: 2, mt: 4, fontFamily: "Segoe UI"
+                        ml: 3, mr: 2, mt: 2, fontFamily: "Segoe UI"
                     }}>
                         I am a computer science student trying to learn more about the wondrous world of computer science. Currently familiar with building API's in both TypeScript and 
                         Java. Fell in love with programming and computers and a very early age when I blew up my computer. Two-three blown up computers later and I am still interested in

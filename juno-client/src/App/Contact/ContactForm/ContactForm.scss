@@ -1,0 +1,43 @@
+.contact-form {
+    position: relative;
+    padding-top: 3vh;
+    float: right;
+    max-width: 55vw;
+    height: auto;
+    padding-right: 25%;
+    @media only screen and (min-width: 1000px) {
+        padding-right: 12.5%;
+    }
+}
+
+.contact-name {
+    margin-bottom: 4vh;
+    width: 60vw;
+    @media only screen and (min-width: 1000px) {
+        width: 40vw;
+    }
+}
+
+.contact-email {
+    margin-bottom: 5vh;
+    width: 60vw;
+    @media only screen and (min-width: 1000px) {
+        width: 40vw;
+    }
+}
+
+.contact-text {
+    margin-bottom: 5vh;
+    width: 60vw;
+    @media only screen and (min-width: 1000px) {
+        width: 40vw;
+    }
+}
+
+.contact-button {
+    margin-bottom: 5vh;
+    width: 60vw;
+    @media only screen and (min-width: 1000px) {
+        width: 40vw;
+    }
+}

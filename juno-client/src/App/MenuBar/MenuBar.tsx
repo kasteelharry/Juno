@@ -4,6 +4,8 @@ import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
 import { useNavigate } from 'react-router-dom';
 
+import './MenuBar.scss';
+
 function MenuBar() {
 
     const pages = ["About me", "Portfolio", "Contact"];
@@ -12,10 +14,13 @@ function MenuBar() {
     const navigate = useNavigate()
 
     return (
-        <AppBar position="static">
+        <AppBar position="static" sx={{bgcolor:'primary.main'}}>
             <Container maxWidth={false}>
                 <Toolbar disableGutters>
+                <img className='title-picture' src={require('../../images/logo.png')} alt='' />
                     <Typography
+                        className='title'
+                        onClick={() => navigate('/')}
                         variant="h6"
                         noWrap
                         component="div"

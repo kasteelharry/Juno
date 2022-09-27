@@ -25,7 +25,7 @@ function SocialButtons() {
                         window.open(socialLinks[index], "_blank", 'noopener,noreferrer')
                     }}
                     size='large'
-                    sx={{color:"black",background:"aqua",marginLeft:4}}>{icon}</IconButton>
+                    sx={{color:"black",bgcolor:"primary.light",marginLeft:4}}>{icon}</IconButton>
                 ))
             }
             </Box>

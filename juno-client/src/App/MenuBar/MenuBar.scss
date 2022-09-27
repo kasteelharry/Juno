@@ -1,9 +1,14 @@
 .title {
+    float: left;
     cursor: pointer;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    max-height: 7vh;
+
 }
 
 .title-picture {
     cursor: pointer;
     max-height: 7vh;
-    margin-right: 2vw;
+    padding-right: 1vw;
 }

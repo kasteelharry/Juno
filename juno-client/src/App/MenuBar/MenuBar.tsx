@@ -14,10 +14,13 @@ function MenuBar() {
     const navigate = useNavigate()
 
     return (
-        <AppBar position="static" sx={{bgcolor:'primary.main'}}>
+        <AppBar position="static" sx={{ bgcolor: 'primary.main' }}>
             <Container maxWidth={false}>
                 <Toolbar disableGutters>
-                <img className='title-picture' src={require('../../images/logo.png')} alt='' />
+                    <img className='title-picture'
+                        onClick={() => navigate('/')}
+                        src={require('../../images/logo.png')}
+                        alt='' />
                     <Typography
                         className='title'
                         onClick={() => navigate('/')}
@@ -28,22 +31,24 @@ function MenuBar() {
                     >
                         Joris Kuiper
                     </Typography>
-                    <Box sx={{ flexGrow: 1,
-                        justifyContent:"right",
-                        display: { xs: 'flex', md: 'flex' } }}>
-              {
-                pages.map((page, index) => (
-                <Button
-                  key={page}
-                  onClick={() => {
-                      navigate(pagesPath[index]);
-                      }}
-                  sx={{ fontSize:15, marginLeft:2, marginRight:3, my: 2, color: 'white', display: 'block' }}
-                >
-                  {page}
-                </Button>
-              ))}
-            </Box>
+                    <Box sx={{
+                        flexGrow: 1,
+                        justifyContent: "right",
+                        display: { xs: 'flex', md: 'flex' }
+                    }}>
+                        {
+                            pages.map((page, index) => (
+                                <Button
+                                    key={page}
+                                    onClick={() => {
+                                        navigate(pagesPath[index]);
+                                    }}
+                                    sx={{ fontSize: 15, marginLeft: 2, marginRight: 3, my: 2, color: 'white', display: 'block' }}
+                                >
+                                    {page}
+                                </Button>
+                            ))}
+                    </Box>
                 </Toolbar>
             </Container>
         </AppBar>

@@ -7,6 +7,7 @@ import AboutPage from "./AboutPage/AboutPage";
 import LandingPage from "./LandingPage/LandingPage";
 import MenuBar from "./MenuBar/MenuBar";
 import Background from './Components/Background';
+import ContactPage from "./Contact/ContactPage";
 function AppContainer() {
 
     return (            
@@ -24,6 +25,7 @@ function AppContainer() {
                     <Routes>
                         <Route path="/" element={<LandingPage/>}/>
                         <Route path='/about' element={<AboutPage/>}/>
+                        <Route path='/contact' element={<ContactPage/>}/>
                     </Routes>
                     
                 </Box>

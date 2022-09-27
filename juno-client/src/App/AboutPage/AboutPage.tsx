@@ -34,7 +34,7 @@ function AboutPage() {
                         ml: 3, mr: 2, mt: 2, fontFamily: "Segoe UI"
                     }}>
                         I am a computer science student trying to learn more about the wondrous world of computer science. Currently familiar with building API's in both TypeScript and 
-                        Java. Fell in love with programming and computers and a very early age when I blew up my computer. Two-three blown up computers later and I am still interested in
+                        Java. <br/><br/>I fell in love with programming and computers and a very early age when I blew up my first computer. Two-three blown up computers later and I am still interested in
                         blowing up more (or write code for them). Lately I have been practising in building front-end websites with the React framework. I am using this website to improve my skills and as they improve so
                         will this website.
                 </Typography>

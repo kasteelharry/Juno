@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
 import ContactForm from "./ContactForm/ContactForm";
-import { FaEnvelopeOpenText } from "react-icons/fa"
+
 import './ContactPage.scss';
 
 function ContactPage() {

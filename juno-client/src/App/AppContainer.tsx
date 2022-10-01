@@ -8,6 +8,7 @@ import LandingPage from "./LandingPage/LandingPage";
 import MenuBar from "./MenuBar/MenuBar";
 import Background from './Components/Background';
 import ContactPage from "./Contact/ContactPage";
+import PortfolioPage from "./PortfolioPage/PortfolioPage";
 function AppContainer() {
 
     return (            
@@ -26,6 +27,7 @@ function AppContainer() {
                         <Route path="/" element={<LandingPage/>}/>
                         <Route path='/about' element={<AboutPage/>}/>
                         <Route path='/contact' element={<ContactPage/>}/>
+                        <Route path='/portfolio' element={<PortfolioPage/>}/>
                     </Routes>
                     
                 </Box>

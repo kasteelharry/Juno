@@ -9,30 +9,35 @@ import MenuBar from "./MenuBar/MenuBar";
 import Background from './Components/Background';
 import ContactPage from "./Contact/ContactPage";
 import PortfolioPage from "./PortfolioPage/PortfolioPage";
+import Footer from "./Footer/Footer";
 function AppContainer() {
 
-    return (            
+    return (
         <ThemeProvider theme={PersonalTheme}>
             <meta name="viewport" content="width=device-width" />
-                <Box className="AppContainer">
-                    <Helmet>
-                        <title>Joris Kuiper</title>
-                    </Helmet>
+            
+            <Box className="AppContainer" sx={{minHeight:'100vh'}}>
+                <Helmet>
+                    <title>Joris Kuiper</title>
+                </Helmet>
 
-                    <MenuBar/>
-                    <Box className='background'>
-                <Background />
-            </Box>
-                    <Routes>
-                        <Route path="/" element={<LandingPage/>}/>
-                        <Route path='/about' element={<AboutPage/>}/>
-                        <Route path='/contact' element={<ContactPage/>}/>
-                        <Route path='/portfolio' element={<PortfolioPage/>}/>
-                    </Routes>
-                    
+                <MenuBar />
+                <Box className='background'>
+                    <Background />
                 </Box>
-
-            </ThemeProvider>
+                <Routes>
+                    <Route path="/" element={<LandingPage />} />
+                    <Route path='/about' element={<AboutPage />} />
+                    <Route path='/contact' element={<ContactPage />} />
+                    <Route path='/portfolio' element={<PortfolioPage />} />
+                </Routes>
+                
+                
+            </Box>
+            <Box className='footer'>
+                <Footer/>
+                </Box>
+        </ThemeProvider>
     )
 }
 

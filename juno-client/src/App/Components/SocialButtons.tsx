@@ -1,7 +1,7 @@
 import { Box, IconButton } from '@mui/material';
 import {FaInstagram, FaGithub, FaLinkedin, FaEnvelope} from "react-icons/fa"
 
-function SocialButtons() {
+function SocialButtons(props?:any) {
 
     const socialIcons = [<FaInstagram/>,
     <FaGithub/>,
@@ -12,10 +12,11 @@ function SocialButtons() {
      "https://www.linkedin.com/in/joris-kuiper-b070b6164/",
     "mailto:joriskuiper2@gmail.com"]
 
+    const className = props.className !== undefined ? props.className : 'SocialBar'
 
 
     return (
-        <Box className='SocialBar'>
+        <Box className={className}>
             {
                 socialIcons.map((icon,index) => (
                     <IconButton

@@ -8,8 +8,8 @@ import './MenuBar.scss';
 
 function MenuBar() {
 
-    const pages = ["About me", "Portfolio", "Contact"];
-    const pagesPath = ['/about', '/portfolio', '/contact'];
+    const pages = ["About me", "Projects", "Portfolio", "Contact"];
+    const pagesPath = ['/about', '/projects', '/portfolio', '/contact'];
 
     const navigate = useNavigate()
 
@@ -27,7 +27,7 @@ function MenuBar() {
                         variant="h6"
                         noWrap
                         component="div"
-                        sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
+                        sx={{ pr: 2, display: { xs: 'none', md: 'flex' } }}
                     >
                         Joris Kuiper
                     </Typography>
@@ -43,7 +43,7 @@ function MenuBar() {
                                     onClick={() => {
                                         navigate(pagesPath[index]);
                                     }}
-                                    sx={{ fontSize: 15, marginLeft: 2, marginRight: 3, my: 2, color: 'white', display: 'block' }}
+                                    sx={{ fontSize: 15, paddingLeft: 2, paddingRight: 3, my: 2, color: 'white', display: 'block' }}
                                 >
                                     {page}
                                 </Button>

@@ -1,0 +1,75 @@
+.GitHubRepo {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.GitHubRepoBox {
+    position: relative;
+    background-color: white;
+    outline: auto;
+    width: 320px;
+    height: 125px;
+    display: inline-block;
+    padding-top: 1vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-bottom: 10vh;
+    text-align: center;
+    border-radius: 25px;
+    vertical-align: top;
+    margin: 2vh;
+    cursor: pointer;
+}
+
+.GitHubRepoBoxTitle {
+    position: relative;
+    width: 100%;
+    padding-bottom: 5px;
+
+}
+
+.GitHubStats {
+    position: absolute;
+    bottom: 1vh;
+    left: 2vw;
+    width: 290px;
+}
+
+.GitHubRepoBoxDescription {
+    position: relative;
+    height: 102%;
+    overflow-y: scroll;
+}
+
+.GitHubRepoBoxStar {
+    display: inline-block;
+    margin-right: 0.25vw;
+    margin-bottom: 0.15vh;
+}
+
+.GitHubRepoBoxStarText {
+    display: inline-block;
+    margin-right: 0.25vw;
+    vertical-align: top;
+}
+
+
+.GitHubRepoBoxStarBox {
+    float: left;
+}
+
+.GitHubRepoBoxLanguages {
+    float: right;
+}
+
+.GitHubRepoBoxLanguage {
+    display: inline-block;
+    margin-right: 0.25vw;
+}
+
+.GitHubRepoBoxLanguageText {
+    display: inline-block;
+    vertical-align: top;
+}

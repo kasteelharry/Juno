@@ -8,7 +8,7 @@
 .GitHubRepoBox {
     position: relative;
     background-color: white;
-    outline: auto;
+    border: 2.5px solid black;
     width: 320px;
     height: 125px;
     display: inline-block;
@@ -25,6 +25,7 @@
 
 .GitHubRepoBoxTitle {
     position: relative;
+    border-bottom: 0.5px solid black;
     width: 100%;
     padding-bottom: 5px;
 

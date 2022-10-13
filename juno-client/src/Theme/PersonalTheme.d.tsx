@@ -1,5 +1,7 @@
 import { createTheme } from '@mui/material/styles';
 
+const font = 'Montserrat';
+
 export const PersonalTheme = createTheme({
     palette: {
         primary: {
@@ -12,34 +14,52 @@ export const PersonalTheme = createTheme({
             main: '#2bb2e3',
         },
     },
+    components: {
+        MuiTypography: {
+            defaultProps: {
+                fontFamily: font,
+            }
+          }
+    },
     typography: {
+        fontFamily: font,
         h3: {
+            fontFamily: font,
             fontSize: '2rem',
             '@media (min-width:600px)': {
+                fontFamily: font,
                 fontSize: '2.5rem',
             },
             '@media (min-width:900px)': {
+                fontFamily: font,
                 fontSize: '3rem',
             },
             '@media (min-width:1000px)': {
+                fontFamily: font,
                 fontSize: '3.5rem',
             },
             '@media (min-width:2000px)': {
+                fontFamily: font,
                 fontSize: '4.5rem',
             },
         },
         h4: {
+            fontFamily: font,
             fontSize: '2rem',
             '@media (min-width:600px)': {
+                fontFamily: font,
                 fontSize: '2.25rem',
             },
             '@media (min-width:900px)': {
+                fontFamily: font,
                 fontSize: '2.5rem',
             },
             '@media (min-width:1000px)': {
+                fontFamily: font,
                 fontSize: '2.25rem',
             },
             '@media (min-width:2000px)': {
+                fontFamily: font,
                 fontSize: '3rem',
             },
         }

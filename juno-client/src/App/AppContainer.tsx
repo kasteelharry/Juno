@@ -6,10 +6,14 @@ import { PersonalTheme } from "../Theme/PersonalTheme.d";
 import AboutPage from "./AboutPage/AboutPage";
 import LandingPage from "./LandingPage/LandingPage";
 import MenuBar from "./MenuBar/MenuBar";
-import Background from './Components/Background';
+// import Background from './Components/Background';
 import ContactPage from "./Contact/ContactPage";
 import PortfolioPage from "./PortfolioPage/PortfolioPage";
 import Footer from "./Footer/Footer";
+import ProjectPage from "./ProjectPage/ProjectPage";
+
+import './AppContainer.scss';
+
 function AppContainer() {
 
     return (
@@ -22,14 +26,17 @@ function AppContainer() {
                 </Helmet>
 
                 <MenuBar />
-                <Box className='background'>
-                    <Background />
+                <Box >
+                    {/* Removed the network moving background due to very high CPU usage. */}
+                    {/* <Background /> */}
+                    <img className='background' src={require('../images/background.jpg')} alt='mountains over Charmonix'/>
                 </Box>
                 <Routes>
                     <Route path="/" element={<LandingPage />} />
                     <Route path='/about' element={<AboutPage />} />
                     <Route path='/contact' element={<ContactPage />} />
                     <Route path='/portfolio' element={<PortfolioPage />} />
+                    <Route path='/projects' element={<ProjectPage/>}/>
                 </Routes>
                 
                 

@@ -26,7 +26,7 @@ function LandingPage() {
                     <SocialButtons />
                     </Box>
                     <Box className='ProfilePhotoBox'>
-                        <img className='ProfilePhoto' src={require('../../images/joris.jpg')} alt='Joris Kuiper' />
+                        <img className='ProfilePhoto' src={require('../../images/joris.jpg')} alt='Joris Kuiper' loading='lazy'/>
                     </Box>
 
             </Box>

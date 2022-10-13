@@ -35,17 +35,17 @@ function PortfolioPage() {
         <Box className="PortfolioPage">
             <Box className="PortfolioColumn col1">
                 {imageOne.map((url, index) => (
-                    <img className="picture" src={url} alt='' />
+                    <img className="picture" src={url} alt='' loading="lazy"/>
                 ))}
             </Box>
             <Box className="PortfolioColumn col2">
                 {imageTwo.map((url, index) => (
-                    <img className="picture" src={url} alt='' />
+                    <img className="picture" src={url} alt='' loading="lazy"/>
                 ))}
             </Box>
             <Box className="PortfolioColumn col3">
                 {imageThree.map((url, index) => (
-                    <img className="picture" src={url} alt='' />
+                    <img className="picture" src={url} alt='' loading="lazy"/>
                 ))}
             </Box>
         </Box>

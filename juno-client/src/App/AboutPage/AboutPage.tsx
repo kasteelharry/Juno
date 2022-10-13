@@ -39,7 +39,7 @@ function AboutPage() {
                         will this website.
                 </Typography>
             </Box>
-            <img className='AboutPhoto' src={require('../../images/aboutJoris.jpg')} alt='' />
+            <img className='AboutPhoto' src={require('../../images/aboutJoris.jpg')} alt='' loading='lazy'/>
             <Box className='details'>
                 <Typography className='details-title'
                     variant="h4"

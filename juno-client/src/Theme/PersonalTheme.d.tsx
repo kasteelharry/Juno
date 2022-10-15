@@ -24,15 +24,17 @@ export const PersonalTheme = createTheme({
     typography: {
         fontFamily: font,
         h3: {
-            fontFamily: font,
-            fontSize: '2rem',
+            '@media (min-width:0px)': {
+                fontFamily: font,
+                fontSize: '1.8rem',
+            },
             '@media (min-width:600px)': {
                 fontFamily: font,
-                fontSize: '2.5rem',
+                fontSize: '2.25rem',
             },
             '@media (min-width:900px)': {
                 fontFamily: font,
-                fontSize: '3rem',
+                fontSize: '2.8rem',
             },
             '@media (min-width:1000px)': {
                 fontFamily: font,
@@ -48,11 +50,11 @@ export const PersonalTheme = createTheme({
             fontSize: '2rem',
             '@media (min-width:600px)': {
                 fontFamily: font,
-                fontSize: '2.25rem',
+                fontSize: '1.5rem',
             },
             '@media (min-width:900px)': {
                 fontFamily: font,
-                fontSize: '2.5rem',
+                fontSize: '2.0rem',
             },
             '@media (min-width:1000px)': {
                 fontFamily: font,

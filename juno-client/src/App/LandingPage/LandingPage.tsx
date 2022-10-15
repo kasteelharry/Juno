@@ -10,12 +10,13 @@ function LandingPage() {
             <Box className='content'>
                     <Box className='TitleAndLinks'>
                         <Typography
+                            className='titleText'
                             variant="h3"
                             noWrap
                             fontWeight='bold'
                             component="div"
                             sx={{
-                                ml: 3, mr: 2, paddingBottom: 3, fontFamily: "Segoe UI"
+                                ml: '3%', mr: '2%', paddingBottom: 3, fontFamily: "Segoe UI"
                             }}
                         >
                             Hi, I am Joris Kuiper <br />

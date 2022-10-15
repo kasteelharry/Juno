@@ -14,7 +14,7 @@ function MenuBar() {
     const navigate = useNavigate()
 
     return (
-        <AppBar position="static" sx={{ bgcolor: 'primary.main' }}>
+        <AppBar position="static" sx={{ bgcolor: 'primary.main'}}>
             <Container maxWidth={false}>
                 <Toolbar disableGutters>
                     <img className='title-picture'
@@ -43,7 +43,7 @@ function MenuBar() {
                                     onClick={() => {
                                         navigate(pagesPath[index]);
                                     }}
-                                    sx={{ fontSize: 15, paddingLeft: 2, paddingRight: 3, my: 2, color: 'white', display: 'block' }}
+                                    sx={{ fontSize: 15, paddingLeft: '2%', paddingRight: '3%', py: '1%', color: 'white', display: 'block' }}
                                 >
                                     {page}
                                 </Button>

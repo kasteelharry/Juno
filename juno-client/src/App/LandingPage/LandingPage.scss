@@ -37,7 +37,13 @@
 
 .titleText {
     display: flex;
-    justify-content: space-around;
+    @media only screen and (min-width: 0px) {
+        justify-content: space-around;
+    }
+    @media only screen and (min-width: 900px) {
+        justify-content: initial;
+    }
+    
 }
 
 .ProfilePhotoBox {

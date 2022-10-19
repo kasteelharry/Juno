@@ -16,7 +16,7 @@ function LandingPage() {
                             fontWeight='bold'
                             component="div"
                             sx={{
-                                ml: '3%', mr: '2%', paddingBottom: 3, fontFamily: "Segoe UI"
+                                ml: '5%', mr: '2%', paddingBottom: 3, fontFamily: "Segoe UI"
                             }}
                         >
                             Hi, I am Joris Kuiper <br />

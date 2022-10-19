@@ -1,6 +1,6 @@
 import { createTheme } from '@mui/material/styles';
 
-const font = 'Montserrat';
+const font = 'sans-serif';
 
 export const PersonalTheme = createTheme({
     palette: {

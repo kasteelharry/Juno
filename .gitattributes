@@ -1,0 +1,4 @@
+*.scss -linguist-detectable
+*.html -linguist-detectable
+*.css -linguist-detectable
+*.dockerfile -linguist-detectable

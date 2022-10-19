@@ -1,0 +1,3 @@
+# Allow the site to be crawled
+User-agent: *
+Allow: /

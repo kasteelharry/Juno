@@ -1,0 +1,50 @@
+.contactPage {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    overflow: hidden;
+}
+
+.contactImageBox {
+    width: 100vw;
+    padding-left: 5vw;
+    padding-top: 5vh;
+    padding-bottom: 2vh;
+    display: none;
+    @media only screen and (min-width: 1000px) {
+        display: inline-block;
+        width: 200vw;
+    }
+    @media only screen and (min-width: 1500px) {
+        display: inline-block;
+        width: 300vw;
+    }
+}
+
+.contactImage {
+    width: 10vw;
+    padding-left: 5vw;
+    padding-top: 5vh;
+    padding-bottom: 2vh;
+    display: none;
+    @media only screen and (min-width: 1000px) {
+        display: inline-block;
+        width: 20vw;
+    }
+    @media only screen and (min-width: 1500px) {
+        display: inline-block;
+        width: 40vw;
+    }
+}
+
+.credits {
+    font-size: smaller;
+    float:left;
+    color: gray;
+    padding-left: 5vw;
+    padding-bottom: 3vh;
+    opacity: 50%;
+    display: none;
+    @media only screen and (min-width: 1000px) {
+        display: inline-block;
+    }
+}

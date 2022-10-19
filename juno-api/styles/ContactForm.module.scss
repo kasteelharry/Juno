@@ -1,0 +1,50 @@
+.contactForm {
+    position: relative;
+    padding-top: 3vh;
+    float: right;
+    max-width: 55vw;
+    height: auto;
+    padding-right: 25%;
+    @media only screen and (min-width: 1000px) {
+        padding-right: 12.5%;
+    }
+}
+
+.contactName {
+    margin-bottom: 2vh;
+    width: 60vw;
+    @media only screen and (min-width: 1000px) {
+        width: 40vw;
+    }
+}
+
+.contactEmail {
+    margin-bottom: 2vh;
+    width: 60vw;
+    @media only screen and (min-width: 1000px) {
+        width: 40vw;
+    }
+}
+
+.contactText {
+    margin-bottom: 2vh;
+    width: 60vw;
+    @media only screen and (min-width: 1000px) {
+        width: 40vw;
+    }
+}
+
+.contactButton {
+    margin-bottom: 5vh;
+    width: 60vw;
+    @media only screen and (min-width: 1000px) {
+        width: 40vw;
+    }
+}
+
+.aboutText {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 1vh;
+    color: black;
+}

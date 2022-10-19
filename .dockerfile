@@ -6,7 +6,7 @@ WORKDIR /app
 # Copy app files
 COPY . .
 # Set working direction to the client inside the copied files
-WORKDIR /app/juno-client
+WORKDIR /app/juno-api
 # ==== BUILD =====
 # Install dependencies (npm ci makes sure the exact versions in the lockfile gets installed)
 RUN npm ci 

@@ -6,20 +6,21 @@
 }
 
 .GitHubRepoBox {
-    position: relative;
-    background-color: white;
-    border: 2px solid black;
-    width: 350px;
-    height: 200px;
+    // layout:"fill";
+    // position: relative;
+    // background-color: white;
+    // border: 2px solid black;
+    // width: 350px;
+    // height: 200px;
     display: inline-block;
-    padding-top: 1vh;
-    padding-left: 1vw;
-    padding-right: 1vw;
-    padding-bottom: 10vh;
-    text-align: center;
-    border-radius: 25px;
-    vertical-align: top;
-    margin: 2vh;
+    // padding-top: 1vh;
+    // padding-left: 1vw;
+    // padding-right: 1vw;
+    // padding-bottom: 10vh;
+    // text-align: center;
+    // border-radius: 25px;
+    // vertical-align: top;
+    margin: 1vh;
     cursor: pointer;
 }
 

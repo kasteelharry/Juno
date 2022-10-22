@@ -1,13 +1,17 @@
 import { Box } from "@mui/material";
 import { useEffect, useState } from "react";
-
+import Image from "next/image";
 import styles from "../../styles/GitHubView.module.scss";
 import GitHubViewComponent from "./GitHubViewComponent";
 
+// Do not show the following repositories:
+const BLACK_LIST_REPOS:string[] = ['github-readme-stats', 'github-widgetbox', 'kasteelharry']
+
 /**
  * Renders all the GitHub repo projects that are owned or worked on by
- * kasteelharry (me).
- * @returns The GitHubViewComponents together in a single box.
+ * kasteelharry (me). It uses the GitHub stats for README repo from
+ * anuraghazra to build the cards for dynamic generation of the cards.
+ * @returns The GitHub Repo cards together in a single box.
  */
 function GitHubView() {
 
@@ -27,14 +31,20 @@ function GitHubView() {
                 }).then((body: any[]) => {
                     const resultArray: object[] = []
                     body.forEach((response: any) => {
-                        const repo = {
-                            name: response.full_name,
-                            description: response.description,
-                            language: response.language,
-                            stars: response.stargazers_count,
-                            url: response.html_url
+                        if (!BLACK_LIST_REPOS.includes(response.name)) {
+                            const repo = {
+                                name: response.full_name,
+                                shortName: response.name,
+                                description: response.description,
+                                language: response.language,
+                                stars: response.stargazers_count,
+                                url: response.html_url,
+                                cardURL: "https://github-readme-stats-omega-tan.vercel.app/api/pin/?username=kasteelharry&repo=" + response.name
+                            }
+                            console.log(repo.cardURL);
+                            
+                            resultArray.push(repo);
                         }
-                        resultArray.push(repo);
                     });
                     resultArray.reverse();
                     resolve(resultArray);
@@ -73,7 +83,18 @@ function GitHubView() {
     return (
         <Box className={styles.GitHubRepo}>
             {repositories.map(repo => (
-                <GitHubViewComponent key={repo} repository={repo}/>
+                // <GitHubViewComponent key={repo} repository={repo}/>
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img 
+                    onClick={(e) => {
+                        // On click open the repository.
+                        e.preventDefault();
+                        window.open(repo.url, "_blank", 'noopener,noreferrer')
+                    }}
+                    className={styles.GitHubRepoBox} 
+                    key={repo} 
+                    src={repo.cardURL} 
+                    alt={repo.description}/>
             ))}
         </Box>
     )

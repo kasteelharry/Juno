@@ -5,6 +5,7 @@ import { IoLanguageOutline } from "react-icons/io5";
 import styles from "../../styles/GitHubView.module.scss";
 
 /**
+ * @deprecated
  * A component that contains the GitHub Repository information passed as
  * a property to the component. It shows the repository title, description,
  * most used programming language, stars and the url to the repository.

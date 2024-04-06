@@ -5,6 +5,12 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: '/madeira',
+        destination: 'https://share.garmin.com/joriskuiper',
+        permanent: false,
+        basePath: false
+      },
+      {
         source: '/hardangervidda',
         destination: 'https://share.garmin.com/JorisHardangervidda',
         permanent: false,
